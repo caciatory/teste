@@ -5,3 +5,9 @@ const getUser = ()=> ({
 })
 
 console.log(getUser());
+
+const numero = (mensage = 'COLOQUE O SEU NOME NO CAMP ABAIXO')=>{
+    console.log(mensage)
+
+}
+numero('jose')
