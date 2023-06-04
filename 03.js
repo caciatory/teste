@@ -25,10 +25,16 @@ const user = {
     redesSocais:['insta' ,'face ','whats ','link']
 }
 
-const {id, email,redesSocais} = user // aqui nos estamos aplicandoa destruturação , pois só estamos criando uma const e colocando dentro das as strings que queremos oegar , sem a necssidade de criar novas const 
-
+const {id, email,redesSocais, ...resto} = user // aqui nos estamos aplicandoa destruturação , pois só estamos criando uma const e colocando dentro das as strings que queremos oegar , sem a necssidade de criar novas const 
+//** na ultima posição estamos usando o rest, é utilizado para coletar o resto das informaçãoes que não forao declaradas dentro da const , sempre devemos usar no final da const e sempre com os 3 pontos antes (...rest) , pode ser usado com qualquer nome  */
 const [P1,P2] = redesSocais 
 
-console.log({id},{email})
+// console.log({id},{email})
 
-console.log( {P1})
+// console.log( {P1})
+
+// console.log( {id,email},{P1})
+
+console.log(resto) //** usamos o chaves dentro para transforma o resultado do lag em um obejeto , se retirar o chaves ele retorna um array
+
+
